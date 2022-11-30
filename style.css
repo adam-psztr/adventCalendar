@@ -36,6 +36,8 @@ body {
 	grid-template-columns: 10vw 80vw 10vw;
 	grid-template-rows: auto 1fr;
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+	justify-items: center;
+	align-items: center;
 }
 
 a {
