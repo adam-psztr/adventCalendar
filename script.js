@@ -59,7 +59,6 @@ let complete = JSON.parse(localStorage.getItem('compArr')) || [16];
 let date = new Date();
 let day = date.getDate();
 
-day = 33;
 for (let i = 1; i <= day; i++) {
 	(i < 24 && i != 11) ? document.querySelectorAll(".box")[boxObj[i]].addEventListener("click", open) : "";
 }
