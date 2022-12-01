@@ -101,7 +101,7 @@ main {
 	top: 9vw;
 	left: 9vw;
 	transform-origin: top left;
-	transform: scale(.01) translateZ(0);
+	transform: scale(.01) translateZ(-10px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -109,15 +109,15 @@ main {
 	border-radius: 20px;
 	box-shadow: 0 0 10px 2px #aaa;
 	text-align: center;
-	transition: all 2s ease-in-out 1s;
+	transition: all 1s ease-in-out .5s;
 }
 
 .close {
 	position: absolute;
-	top: 5px;
-	right: 5px;
-	font-size: 1.5rem;
-	padding: 10px;
+	top: 10px;
+	right: 10px;
+	font-size: 1.7rem;
+	padding: 15px;
 }
 
 .description {
@@ -144,9 +144,117 @@ main {
 }
 
 .open .gift {
+	transform: scale(1) translateZ(1000px);
+	transform-origin: top left;
+	z-index: 999;
+}
+
+.open.n01 .gift {
+	top: 15.5vw;
+	left: -5vw;
+}
+
+.open.n02 .gift {
+	top: 15.5vw;
+	left: -25.5vw;
+}
+
+.open.n03 .gift {
+	top: 15.5vw;
+	left: -46vw;
+}
+
+.open.n04 .gift {
+	top: 15.5vw;
+	left: -66.5vw;
+}
+
+.open.n05 .gift {
+	top: -5vw;
+	left: -5vw;
+}
+
+.open.n06 .gift {
+	top: -5vw;
+	left: -25.5vw;
+}
+
+.open.n07 .gift {
+	top: -5vw;
+	left: -66.5vw;
+}
+
+.open.n08 .gift {
+	top: -25.5vw;
+	left: -5vw;
+}
+
+.open.n09 .gift {
+	top: -25.5vw;
+	left: -25.5vw;
+}
+
+.open.n10 .gift {
+	top: -25.5vw;
+	left: -46vw;
+}
+
+.open.n11 .gift {
+	top: -25.5vw;
+	left: -66.5vw;
+}
+
+.open.n12 .gift {
+	top: -46vw;
+	left: -5vw;
+}
+
+.open.n13 .gift {
+	top: -46vw;
+	left: -25.5vw;
+}
+
+.open.n14 .gift {
+	top: -46vw;
+	left: -46vw;
+}
+
+.open.n15 .gift {
+	top: -46vw;
+	left: -66.5vw;
+}
+
+.open.n16 .gift {
+	top: -66.5vw;
+	left: -5vw;
+}
+
+.open.n17 .gift {
 	top: -66.5vw;
 	left: -25.5vw;
-	transform-origin: top left;
-	transform: scale(1) translateZ(1000px);
-	z-index: 999;
+}
+
+.open.n18 .gift {
+	top: -66.5vw;
+	left: -66.5vw;
+}
+
+.open.n19 .gift {
+	top: -87vw;
+	left: -5vw;
+}
+
+.open.n20 .gift {
+	top: -87vw;
+	left: -25.5vw;
+}
+
+.open.n21 .gift {
+	top: -87vw;
+	left: -46vw;
+}
+
+.open.n22 .gift {
+	top: -87vw;
+	left: -66.5vw;
 }
