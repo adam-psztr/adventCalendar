@@ -38,6 +38,8 @@ body {
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 	justify-items: center;
 	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: .15rem;
 }
 
 a {
@@ -81,17 +83,6 @@ main {
 	grid-row: 4 / span 2;
 }
 
-.gift {
-	position: absolute;
-	border: 1px solid red;
-	height: 90vw;
-	width: 90vw;
-	top: 5vw;
-	left: 5vw;
-	transform-origin: top left;
-	transform: scale(.1);
-}
-
 .window {
 	position: absolute;
 	width: calc(100% + 3px);
@@ -99,5 +90,63 @@ main {
 	top: -2px;
 	left: 0;
 	transform-origin: left;
-	transform: rotateY(0deg);
+	transform: perspective(100px) rotateY(0deg);
+	transition: all 1s ease-in-out;
+}
+
+.gift {
+	position: absolute;
+	height: 90vw;
+	width: 90vw;
+	top: 9vw;
+	left: 9vw;
+	transform-origin: top left;
+	transform: scale(.01) translateZ(0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(#b3c8d3, #fffcf2);
+	border-radius: 20px;
+	box-shadow: 0 0 10px 2px #aaa;
+	text-align: center;
+	transition: all 2s ease-in-out 1s;
+}
+
+.close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 1.5rem;
+	padding: 10px;
+}
+
+.description {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.reddemBtn {
+	position: absolute;
+	bottom: 30px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: #ff606f;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.open {
+	z-index: 999;
+}
+
+.open img {
+	transform: rotateY(-110deg);
+}
+
+.open .gift {
+	top: -66.5vw;
+	left: -25.5vw;
+	transform-origin: top left;
+	transform: scale(1) translateZ(1000px);
+	z-index: 999;
 }
