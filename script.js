@@ -54,7 +54,7 @@ let boxObj = {
 	23: 13
 }
 
-let complete = JSON.parse(localStorage.getItem('compArr')) || [16];
+let complete = JSON.parse(localStorage.getItem('compArr')) || [16,9];
 
 let date = new Date();
 let day = date.getDate();
