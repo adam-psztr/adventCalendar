@@ -63,6 +63,8 @@ for (let i = 1; i <= day; i++) {
 	(i < 24 && i != 11) ? document.querySelectorAll(".box")[boxObj[i]].addEventListener("click", open) : "";
 }
 
+document.querySelectorAll(".box")[boxObj[23]].addEventListener("click", open)
+
 document.querySelectorAll(".close").forEach((e)=>e.addEventListener("click", close));
 
 document.querySelectorAll(".reddemBtn").forEach((e)=>e.addEventListener("click", compF));
